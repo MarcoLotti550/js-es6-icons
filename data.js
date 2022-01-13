@@ -1,4 +1,4 @@
-[
+const icone = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -112,3 +112,23 @@
 		color: 'blue'
 	}
 ];
+
+const contenitore = document.getElementById("icons-container");
+
+
+icone.forEach((elemento) => {
+	contenitore.innerHTML += getBoxCode(elemento);
+
+});
+
+
+function getBoxCode(icone) {
+	const {name, color} = icone;
+
+	return `
+		<div class="box">
+			<i class="fas fa-${name}" style="color: ${color};"></i>
+			<div class="">${name}</div>
+		</div>
+	`;
+}
