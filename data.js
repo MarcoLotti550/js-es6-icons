@@ -126,8 +126,8 @@ function getBoxCode(icone) {
 	const {name, color} = icone;
 
 	return `
-		<div class="box">
-			<i class="fas fa-${name}" style="color: ${color};"></i>
+		<div class="box d-flex-box">
+			<i class="fas fa-${name} fa-3x" style="color: ${color};"></i>
 			<div class="">${name}</div>
 		</div>
 	`;
