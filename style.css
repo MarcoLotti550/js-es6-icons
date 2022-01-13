@@ -3,6 +3,7 @@
     margin: 0%;
     box-sizing: border-box;
 }
+/* header e logo */
 .d-flex{
     display: flex;
     align-items: center;
@@ -14,7 +15,7 @@
 header h1{
     font-size: 2rem;
 }
-
+/* box icone */
 .box{
     display: flex;
     flex-direction: column;
@@ -36,4 +37,14 @@ header h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+/* filtro select */
+.container-filter{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(71, 144, 255);
+}
+.container-filter h2{
+    margin: 0px 20px;
+    padding: 10px 0;
 }
